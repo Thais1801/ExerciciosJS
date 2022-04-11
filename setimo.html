@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Execicios JS</title>
+</head>
+<body>
+<h1>Sétimo JS</h1><br>
+<p>Insira o 1º número:</p>
+<input id="n1" type="number"></input><br><br>
+<p>Insira o 2º número:</p>
+<input id="n2" type="number"></input><br><br>
+<button id="calcular" onclick="setimo()">Calcular</button> <br><br>
+<div id="resultado"></div>
+
+<script defer>
+    function setimo(){
+        const n1 = parseInt(document.getElementById("n1").value);
+        const n2 = parseInt(document.getElementById("n2").value);
+        
+    let soma = "O resultado da soma é " + (n1 + n2) + "\n";
+    let sub = "O resultado da subtração é " + (n1 - n2) + "\n";
+    let div = "O resultado da divisão é " + (n1/n2) + "\n";
+    let mult = "O resultado da multiplicação é " + (n1 * n2) + "\n";
+    let pot = "O resultado da potenciação é " + (n1 ** n2) + "\n";
+    
+    const divR = document.getElementById("resultado");
+    
+    let item = document.createElement('pre');
+        item.appendChild(document.createTextNode(soma));
+   		item.appendChild(document.createTextNode(sub));
+        item.appendChild(document.createTextNode(div));
+        item.appendChild(document.createTextNode(mult));
+        item.appendChild(document.createTextNode(pot));
+        divR.appendChild(item);
+    }
+   </script>
+   
+  </body>
+</html>

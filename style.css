@@ -1,0 +1,10 @@
+body {
+    font-weight: bold;
+    color: rgb(80, 200, 120);
+    background-color: #F1FBEE;
+    text-align: center;
+    font-size: medium;
+}
+ul {
+  display:inline-block;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Execicios JS</title>
+</head>
+<body>
+<h1>Sexta JS</h1><br>
+<p>Digite o seu nome:</p>
+<input onclick="deletarN()" id="nome" type="text"></input><br><br>
+<p>Digite o seu sobrenome:</p>
+<input onclick="deletarS()" id="sobrenome" type="text"></input><br><br>
+<button id="enviar" onclick="sexto()">Enviar</button>
+
+<script defer>
+    function sexto(){
+        let nome = document.getElementById("nome").value;
+        let sobrenome = document.getElementById("sobrenome").value;
+        alert("Olá, " + nome + " " + sobrenome + "!");
+    }
+    function deletarN(){
+        document.getElementById("nome").value= " "
+    }
+    function deletarS(){
+        document.getElementById("sobrenome").value= " "
+    }
+</script>

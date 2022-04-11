@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Execicios JS</title>
+</head>
+<body>
+<h1>Quinto JS</h1><br>
+<p>Digite o seu nome:</p>
+<input id="nome" type="text"></input><br><br>
+<p>Digite o seu sobrenome:</p>
+<input id="sobrenome" type="text"></input><br><br>
+<button id="enviar" onclick="quinto()">Enviar</button>
+
+<script defer>
+    function quinto(){
+        let nome = document.getElementById("nome").value;
+        let sobrenome = document.getElementById("sobrenome").value;
+        alert("Olá, " + nome + " " + sobrenome + "!");
+    }
+</script>
