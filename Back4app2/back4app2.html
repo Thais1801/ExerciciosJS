@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Back4App Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+    </style>
+    <script src="https://npmcdn.com/parse@3.4.2/dist/parse.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <br>
+    <h1>Back4App - Lista de Tarefas</h1><br>
+    <hr/><br>
+      <label>
+        <input type="checkbox" onclick="exibicaoPend()" id="filtroPendentes"/> Exibir apenas pendentes
+      </label>
+    <br>
+    <div id="container1">
+      <h3>Digite uma tarefa:</h3><br>
+      <input type="text" id="desc_t" placeholder="..."/>
+      <button id="inserir" onclick="inserir()">Inserir</button>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div id="container2">
+    <div id="edicao"></div>
+  </div>
+  <ul id="lista">
+  </ul>
+  </body>
+</html>
